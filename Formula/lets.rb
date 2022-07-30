@@ -5,21 +5,21 @@
 class Lets < Formula
   desc "CLI task runner for productive developers - a better alternative to make"
   homepage "https://lets-cli.org/"
-  version "0.0.48"
+  version "0.0.49"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lets-cli/lets/releases/download/v0.0.48/lets_Darwin_x86_64.tar.gz"
-      sha256 "ad41a7a4b36913a0641bfc4a560a55161836bf4d9ee262be9ff2dddcb9535940"
+      url "https://github.com/lets-cli/lets/releases/download/v0.0.49/lets_Darwin_x86_64.tar.gz"
+      sha256 "88f9f4516ee8d8bdb6cd9495b48d71a8e87ab740d9d58673f2f6b4f2c5298055"
 
       def install
         bin.install "lets"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lets-cli/lets/releases/download/v0.0.48/lets_Darwin_arm64.tar.gz"
-      sha256 "be7eb9db4584727951282f02c54e2098de461eedd0484f4f02bc1b0bafab39be"
+      url "https://github.com/lets-cli/lets/releases/download/v0.0.49/lets_Darwin_arm64.tar.gz"
+      sha256 "93845ba1e10cd2ace8870b21f508c3023ec964ed0a9eb84f2ae5f1bd2ba66b93"
 
       def install
         bin.install "lets"
@@ -29,8 +29,8 @@ class Lets < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/lets-cli/lets/releases/download/v0.0.48/lets_Linux_x86_64.tar.gz"
-      sha256 "30d7a155df0f0dc78f86ce8239459d78034b0bed86402ed60847dd3874f129eb"
+      url "https://github.com/lets-cli/lets/releases/download/v0.0.49/lets_Linux_x86_64.tar.gz"
+      sha256 "94c04204ec497d444b8a1cae1fa738e24779790c8b48baf304ed6347377be852"
 
       def install
         bin.install "lets"
