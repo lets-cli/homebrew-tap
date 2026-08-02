@@ -5,21 +5,21 @@
 class Lets < Formula
   desc "CLI task runner for productive developers - a better alternative to make"
   homepage "https://lets-cli.org/"
-  version "0.0.62"
+  version "0.0.63"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lets-cli/lets/releases/download/v0.0.62/lets_Darwin_x86_64.tar.gz"
-      sha256 "6ed0494e7ace7243e4add048be94b851ef3d4b08fa966ca0d9d8eed90e2ce59c"
+      url "https://github.com/lets-cli/lets/releases/download/v0.0.63/lets_Darwin_x86_64.tar.gz"
+      sha256 "6f5b0cc6092617b4c28a7d9b1ceb239b47a0174bff8c6b5a3db16a3dc43b026e"
 
       define_method(:install) do
         bin.install "lets"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lets-cli/lets/releases/download/v0.0.62/lets_Darwin_arm64.tar.gz"
-      sha256 "f5c2d7948ff5a9b3cb46d1b0648040ef609833685c41b42a559e6470a6013859"
+      url "https://github.com/lets-cli/lets/releases/download/v0.0.63/lets_Darwin_arm64.tar.gz"
+      sha256 "f490178997f9125764a25c5cf8f4a558f9546a6c32b0d6b1180afd7066b9e919"
 
       define_method(:install) do
         bin.install "lets"
@@ -29,8 +29,8 @@ class Lets < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lets-cli/lets/releases/download/v0.0.62/lets_Linux_x86_64.tar.gz"
-      sha256 "fc82bd733667e1efad8dff96b7647fd54730343c7626dc858991011c0bd20dd9"
+      url "https://github.com/lets-cli/lets/releases/download/v0.0.63/lets_Linux_x86_64.tar.gz"
+      sha256 "ee8fcf5630a81a8116aeb1df108836ad31dce3262d29ebe15a0575613b1a401b"
       define_method(:install) do
         bin.install "lets"
       end
